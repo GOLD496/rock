@@ -33,6 +33,9 @@ header button{
     background-color:#2C403A;
     border: 0px;
 }
+header button:hover{
+    background-color:#31f7bb;
+}
 #left{
     margin-left:auto; 
 }
@@ -65,4 +68,8 @@ main section{
     flex:1;
     border: 5px solid #52F2B8;
     border-radius:10px;
+}
+#controls button:hover{
+    background-color:#52F2B8;
+
 }

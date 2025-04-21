@@ -8,12 +8,16 @@ let robot = document.getElementById("robot");
 
 function getComputerChoice(){
     let choice = Math.floor(Math.random() * 3);
+    let comp = document.getElementById("comp");
     switch (choice){
         case 0:
+            comp.innerHTML = "the computer chose: rock";
             return "rock";
         case 1:
+            comp.innerHTML = "the computer chose: paper";
             return "paper";
         default:
+            comp.innerHTML = "the computer chose: scissors";
             return "scissors";
 
     }
@@ -97,11 +101,10 @@ function playRound(humanchoice,computerchoice){
 
 }
 
-getHumanChoice();
+
 
 
 document.getElementById("start").addEventListener("click",()=>{
-    document.location.reload();
-
+    getHumanChoice();
 });
 
