@@ -4,9 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
-    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/195a11e476.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <header>
+        <div id="score">
+            <p >score:   </p>
+            <i class="fa-solid fa-user icon"></i>
+            <p id="user">:0 </p>
+            <i class="fa-solid fa-robot icon"></i>
+            <p id="robot">:0 </p>
+            <p id="left">Start</p>
+            <button id="start">
+                <i class="fa-solid fa-play icon"></i>
+            </button>
+        </div>
+        <h1>ROCK PAPER SCISSORS</h1>
+    </header>
+    <main>
+        <section>
+            <div>
+                <p id="message"></p>
+            </div>
+        </section>
+        <section>
+            <h2>Select Your Choice</h2>
+        </section>
+        <section>
+            <div id="controls">
+                <button id="rock">
+                    <i class="fa-solid fa-gem control-icon"></i>
+                    <p>ROCK</p>
+                </button>
+                <button id="paper">
+                    <i class="fa-solid fa-sheet-plastic control-icon"></i>
+                    <p>PAPER</p>
+                </button>
+                <button id="scissors">
+                    <i class="fa-solid fa-scissors control-icon"></i>
+                    <p>SCISSORS</p>
+                </button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
